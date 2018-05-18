@@ -9,17 +9,25 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var slideimageView: UIImageView!
+    @IBOutlet weak var imageHeightConstraint: NSLayoutConstraint!
+    
     override func viewDidLoad() {
+        displaySlideImageView()
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func displaySlideImageView(){
+        let url = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Angkor_Wat.jpg/1280px-Angkor_Wat.jpg"
+        //let url = "http://mamod.me/data/upload/2016/07/wordpress-gallery-plugin-grafito-seven-demo.jpg"
+        //let url = "https://fossbytes.com/wp-content/uploads/2018/05/YouTube-remind-me-to-take-a-break-main.png"
+        slideimageView.downloadImageWith(urlString: url, completion:   {
+            if let image = self.slideimageView.image{
+                let aspect = image.size.height / image.size.width
+                
+                self.imageHeightConstraint.constant = self.view.frame.size.width * aspect
+            }
+        })
     }
-
 
 }
 
