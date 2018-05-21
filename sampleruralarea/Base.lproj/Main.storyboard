@@ -87,10 +87,46 @@
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gIy-vI-kGJ">
                                                 <rect key="frame" x="8" y="410" width="359" height="124"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rice" translatesAutoresizingMaskIntoConstraints="NO" id="gr9-I3-OUf">
+                                                        <rect key="frame" x="8" y="8" width="106" height="108"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="108" id="Tbj-ac-Key"/>
+                                                            <constraint firstAttribute="width" constant="106" id="t3H-Id-RI5"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rice" translatesAutoresizingMaskIntoConstraints="NO" id="ndK-lo-exA">
+                                                        <rect key="frame" x="245" y="8" width="106" height="108"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="106" id="ZAB-kL-7oI"/>
+                                                            <constraint firstAttribute="height" constant="108" id="nXX-ph-qIN"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="river" translatesAutoresizingMaskIntoConstraints="NO" id="foK-T3-Cig">
+                                                        <rect key="frame" x="126" y="8" width="106" height="108"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="106" id="wL7-vF-mPj"/>
+                                                            <constraint firstAttribute="height" constant="108" id="x95-pF-wIM"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
                                                 <color key="backgroundColor" red="0.32071798019999997" green="0.74599255180000001" blue="0.44525562260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="ndK-lo-exA" secondAttribute="bottom" constant="8" id="1Rq-2r-1gl"/>
                                                     <constraint firstAttribute="width" constant="359" id="4mz-Lm-zpP"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="foK-T3-Cig" secondAttribute="trailing" constant="127" id="608-JR-sCY"/>
+                                                    <constraint firstItem="foK-T3-Cig" firstAttribute="top" secondItem="gIy-vI-kGJ" secondAttribute="top" constant="8" id="9yh-0c-6sV"/>
+                                                    <constraint firstItem="gr9-I3-OUf" firstAttribute="top" secondItem="gIy-vI-kGJ" secondAttribute="top" constant="8" id="M7l-6M-ni0"/>
+                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gr9-I3-OUf" secondAttribute="trailing" constant="245" id="eKk-tB-O4v"/>
+                                                    <constraint firstAttribute="bottom" secondItem="foK-T3-Cig" secondAttribute="bottom" constant="8" id="f7N-sX-WRq"/>
                                                     <constraint firstAttribute="height" constant="124" id="feK-W5-DGM"/>
+                                                    <constraint firstAttribute="bottom" secondItem="gr9-I3-OUf" secondAttribute="bottom" constant="8" id="gVm-GO-88o"/>
+                                                    <constraint firstItem="gr9-I3-OUf" firstAttribute="leading" secondItem="gIy-vI-kGJ" secondAttribute="leading" constant="8" id="idi-Kg-4D3"/>
+                                                    <constraint firstItem="ndK-lo-exA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="foK-T3-Cig" secondAttribute="trailing" constant="13" id="ilz-AL-Ja8"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ndK-lo-exA" secondAttribute="trailing" constant="8" id="kuD-zA-T7K"/>
+                                                    <constraint firstItem="foK-T3-Cig" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gr9-I3-OUf" secondAttribute="trailing" constant="12" id="loX-kP-oBO"/>
+                                                    <constraint firstItem="ndK-lo-exA" firstAttribute="top" secondItem="gIy-vI-kGJ" secondAttribute="top" constant="8" id="pHb-wf-A0X"/>
+                                                    <constraint firstItem="foK-T3-Cig" firstAttribute="centerX" secondItem="gIy-vI-kGJ" secondAttribute="centerX" id="wjg-vj-6Ke"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -244,6 +280,7 @@
         <image name="house" width="24" height="24"/>
         <image name="menu" width="24" height="24"/>
         <image name="placeholder" width="24" height="24"/>
+        <image name="rice" width="64" height="64"/>
         <image name="river" width="128" height="128"/>
         <image name="support" width="24" height="24"/>
         <image name="user" width="24" height="24"/>
