@@ -85,6 +85,14 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gIy-vI-kGJ">
+                                                <rect key="frame" x="8" y="410" width="359" height="124"/>
+                                                <color key="backgroundColor" red="0.32071798019999997" green="0.74599255180000001" blue="0.44525562260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="359" id="4mz-Lm-zpP"/>
+                                                    <constraint firstAttribute="height" constant="124" id="feK-W5-DGM"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -110,6 +118,7 @@
                                             <constraint firstItem="gmU-XQ-8pU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Nya-6R-Czc" secondAttribute="trailing" constant="15" id="kA6-Gu-x07"/>
                                             <constraint firstItem="ni8-pf-sj7" firstAttribute="top" secondItem="Spg-V9-oEu" secondAttribute="bottom" constant="20" id="rLa-j7-ogu"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wLN-dU-Box" secondAttribute="trailing" constant="133" id="vAO-bd-tJW"/>
+                                            <constraint firstItem="gIy-vI-kGJ" firstAttribute="top" secondItem="ni8-pf-sj7" secondAttribute="bottom" constant="22" id="ynn-xK-iEN"/>
                                             <constraint firstItem="U7n-an-kDj" firstAttribute="top" secondItem="Spg-V9-oEu" secondAttribute="bottom" constant="-32" id="zTK-zo-7QW"/>
                                         </constraints>
                                     </view>
@@ -127,6 +136,9 @@
                         <constraints>
                             <constraint firstItem="45c-Yd-Wrg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DzU-sg-e3D"/>
                             <constraint firstItem="45c-Yd-Wrg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Lnh-By-iQl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="gIy-vI-kGJ" secondAttribute="bottom" constant="20" id="NTJ-Xl-NNu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gIy-vI-kGJ" secondAttribute="trailing" constant="8" id="TBH-8R-jmp"/>
+                            <constraint firstItem="gIy-vI-kGJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="awd-rY-K4z"/>
                             <constraint firstItem="45c-Yd-Wrg" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="e8t-Zs-eE0"/>
                             <constraint firstAttribute="trailing" secondItem="45c-Yd-Wrg" secondAttribute="trailing" id="psp-TJ-Zbh"/>
                         </constraints>
@@ -155,9 +167,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1648.8" y="-197.45127436281859"/>
+            <point key="canvasLocation" x="1661.5999999999999" y="-106.59670164917542"/>
         </scene>
-        <!--Item 2-->
+        <!--MAP-->
         <scene sceneID="J4z-lu-DqK">
             <objects>
                 <viewController id="Dh5-LR-Fzj" sceneMemberID="viewController">
@@ -167,13 +179,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="s2V-p7-mM1"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="D3P-5M-7zw"/>
+                    <tabBarItem key="tabBarItem" title="MAP" image="placeholder" id="D3P-5M-7zw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PYr-c9-UYl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2600.8000000000002" y="-766.86656671664173"/>
+            <point key="canvasLocation" x="1662" y="-770"/>
         </scene>
-        <!--Item 1-->
+        <!--HELP-->
         <scene sceneID="vm6-TB-qXW">
             <objects>
                 <viewController id="EjM-mx-Jir" sceneMemberID="viewController">
@@ -183,7 +195,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="mIq-5R-Yud"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="cfh-qk-Vvz"/>
+                    <tabBarItem key="tabBarItem" title="HELP" image="support" id="cfh-qk-Vvz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bko-bT-fhF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -231,7 +243,9 @@
     <resources>
         <image name="house" width="24" height="24"/>
         <image name="menu" width="24" height="24"/>
+        <image name="placeholder" width="24" height="24"/>
         <image name="river" width="128" height="128"/>
+        <image name="support" width="24" height="24"/>
         <image name="user" width="24" height="24"/>
     </resources>
 </document>
