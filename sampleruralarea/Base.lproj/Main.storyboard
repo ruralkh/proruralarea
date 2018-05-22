@@ -130,12 +130,28 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iKh-Bs-CvH">
-                                                <rect key="frame" x="-207" y="0.0" width="207" height="552"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="552"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seE-uK-fiH">
-                                                        <rect key="frame" x="8" y="8" width="44" height="30"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seE-uK-fiH">
+                                                        <rect key="frame" x="8" y="8" width="191" height="40"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <state key="normal" title="HOME"/>
+                                                        <color key="backgroundColor" red="0.32071798019999997" green="0.74599255180000001" blue="0.44525562260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <state key="normal" title="    HOME" image="house"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbe-4l-8Pb">
+                                                        <rect key="frame" x="8" y="68" width="191" height="40"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" red="0.32071798019999997" green="0.74599255180000001" blue="0.44525562260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <state key="normal" title="    BOOKMARKS" image="contract"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RM3-3A-mJc">
+                                                        <rect key="frame" x="8" y="128" width="191" height="40"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="backgroundColor" red="0.32071798019999997" green="0.74599255180000001" blue="0.44525562260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                        <state key="normal" title="    CATEGORY" image="four-black-squares"/>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.19182161019999999" green="0.97925437179999997" blue="0.4368117815" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -168,7 +184,7 @@
                                             <constraint firstItem="Ao3-uS-yOy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wLN-dU-Box" secondAttribute="trailing" constant="15" id="j0I-P9-tkQ"/>
                                             <constraint firstAttribute="trailing" secondItem="Ao3-uS-yOy" secondAttribute="trailing" constant="8" id="jYe-nz-kpf"/>
                                             <constraint firstItem="gmU-XQ-8pU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Nya-6R-Czc" secondAttribute="trailing" constant="15" id="kA6-Gu-x07"/>
-                                            <constraint firstItem="iKh-Bs-CvH" firstAttribute="leading" secondItem="MxO-3T-gY6" secondAttribute="leading" constant="-207" id="l8o-rc-VfJ"/>
+                                            <constraint firstItem="iKh-Bs-CvH" firstAttribute="leading" secondItem="MxO-3T-gY6" secondAttribute="leading" id="l8o-rc-VfJ"/>
                                             <constraint firstItem="ni8-pf-sj7" firstAttribute="top" secondItem="Spg-V9-oEu" secondAttribute="bottom" constant="20" id="rLa-j7-ogu"/>
                                             <constraint firstAttribute="bottom" secondItem="iKh-Bs-CvH" secondAttribute="bottom" id="snI-sS-2Ay"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wLN-dU-Box" secondAttribute="trailing" constant="133" id="vAO-bd-tJW"/>
@@ -300,6 +316,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="contract" width="24" height="24"/>
+        <image name="four-black-squares" width="24" height="24"/>
         <image name="house" width="24" height="24"/>
         <image name="menu" width="24" height="24"/>
         <image name="placeholder" width="24" height="24"/>

@@ -37,6 +37,7 @@ class ViewController: UIViewController {
         })
         
     }
+    
     @IBAction func OpenMenuSideBar(_ sender: Any) {
         if(menuShowing){
             leadingConstraint.constant =  -207
