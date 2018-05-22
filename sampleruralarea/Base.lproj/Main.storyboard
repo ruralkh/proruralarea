@@ -130,7 +130,7 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.32071798019999997" green="0.74599255180000001" blue="0.44525562260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="Nya-6R-Czc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Spg-V9-oEu" secondAttribute="trailing" constant="14" id="0d1-UF-Q1P"/>
                                             <constraint firstItem="gmU-XQ-8pU" firstAttribute="top" secondItem="xyS-Nq-R1A" secondAttribute="bottom" constant="20" id="1KY-Dg-25z"/>
