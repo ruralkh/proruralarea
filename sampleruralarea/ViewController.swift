@@ -12,9 +12,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var slideimageView: UIImageView!
     @IBOutlet weak var imageHeightConstraint: NSLayoutConstraint!
     
+    @IBOutlet weak var leadingConstraint: NSLayoutConstraint!
+    var menuShowing = false
+    @IBOutlet weak var menuView: UIView!
+    
     override func viewDidLoad() {
         displaySlideImageView()
         super.viewDidLoad()
+    }
+    func displayMenuSideBar(){
+        menuView.layer.shadowOpacity = 1
+        menuView.layer.shadowRadius = 6
     }
     func displaySlideImageView(){
         let url = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Angkor_Wat.jpg/1280px-Angkor_Wat.jpg"
@@ -29,6 +37,17 @@ class ViewController: UIViewController {
         })
         
     }
-
+    @IBAction func OpenMenuSideBar(_ sender: Any) {
+        if(menuShowing){
+            leadingConstraint.constant =  -207
+        } else{
+            leadingConstraint.constant = 0
+            UIView.animate(withDuration: 0.3) {
+                self.view.layoutIfNeeded()
+            }
+        }
+        menuShowing = !menuShowing
+    }
+    
 }
 
