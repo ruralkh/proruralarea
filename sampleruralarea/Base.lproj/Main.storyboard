@@ -130,7 +130,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iKh-Bs-CvH">
-                                                <rect key="frame" x="-207" y="0.0" width="207" height="552"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="552"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seE-uK-fiH">
                                                         <rect key="frame" x="8" y="8" width="191" height="40"/>
@@ -164,10 +164,11 @@
                                                     </button>
                                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="I3N-wM-dyB">
                                                         <rect key="frame" x="8" y="168" width="191" height="128"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" red="0.32071798019999997" green="0.74599255180000001" blue="0.44525562260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="128" id="F4r-TJ-HsQ"/>
                                                         </constraints>
+                                                        <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <prototypes>
                                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellcategory" textLabel="Q16-Sv-w8Q" style="IBUITableViewCellStyleDefault" id="aPA-S0-a5Q">
                                                                 <rect key="frame" x="0.0" y="28" width="191" height="44"/>
@@ -180,11 +181,12 @@
                                                                             <rect key="frame" x="15" y="0.0" width="161" height="43.5"/>
                                                                             <autoresizingMask key="autoresizingMask"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                            <nil key="textColor"/>
+                                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                     </subviews>
                                                                 </tableViewCellContentView>
+                                                                <color key="backgroundColor" red="0.32071798019999997" green="0.74599255180000001" blue="0.44525562260000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </tableViewCell>
                                                         </prototypes>
                                                         <connections>
@@ -235,7 +237,7 @@
                                             <constraint firstItem="Ao3-uS-yOy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wLN-dU-Box" secondAttribute="trailing" constant="15" id="j0I-P9-tkQ"/>
                                             <constraint firstAttribute="trailing" secondItem="Ao3-uS-yOy" secondAttribute="trailing" constant="8" id="jYe-nz-kpf"/>
                                             <constraint firstItem="gmU-XQ-8pU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Nya-6R-Czc" secondAttribute="trailing" constant="15" id="kA6-Gu-x07"/>
-                                            <constraint firstItem="iKh-Bs-CvH" firstAttribute="leading" secondItem="MxO-3T-gY6" secondAttribute="leading" constant="-207" id="l8o-rc-VfJ"/>
+                                            <constraint firstItem="iKh-Bs-CvH" firstAttribute="leading" secondItem="MxO-3T-gY6" secondAttribute="leading" id="l8o-rc-VfJ"/>
                                             <constraint firstItem="ni8-pf-sj7" firstAttribute="top" secondItem="Spg-V9-oEu" secondAttribute="bottom" constant="20" id="rLa-j7-ogu"/>
                                             <constraint firstAttribute="bottom" secondItem="iKh-Bs-CvH" secondAttribute="bottom" id="snI-sS-2Ay"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wLN-dU-Box" secondAttribute="trailing" constant="133" id="vAO-bd-tJW"/>

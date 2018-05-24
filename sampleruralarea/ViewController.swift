@@ -92,8 +92,14 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
         cell.textLabel?.text = fruitList[indexPath.row]
         return cell
     }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("-----------------------")
+        print(fruitList[indexPath.row])
     }
 
 }
