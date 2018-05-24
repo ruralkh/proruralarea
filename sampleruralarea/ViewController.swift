@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var categoryButton: UIButton!
     @IBOutlet weak var categoryTableView: UITableView!
-    var fruitList = ["Dara1","See2","Welcome3","WeDara4","SeeAgain5"]
+    var categories = ["Field","Rice","Rever","Fruit","Vegatable"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -83,13 +83,13 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDelegate,UITableViewDataSource{
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         print(#function)
-        return fruitList.count
+        return categories.count
     }
 
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         print(#function)
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellcategory",for: indexPath)
-        cell.textLabel?.text = fruitList[indexPath.row]
+        cell.textLabel?.text = categories[indexPath.row]
         return cell
     }
     
@@ -99,7 +99,7 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("-----------------------")
-        print(fruitList[indexPath.row])
+        print(categories[indexPath.row])
     }
 
 }
