@@ -16,9 +16,15 @@ class ViewController: UIViewController {
     var menuShowing = false
     @IBOutlet weak var menuView: UIView!
     
+    var category = ["Value1","Value2","Value3","Value4"]
+    @IBOutlet weak var categoryUIButton: UIButton!
+    @IBOutlet weak var categoryTableView: UITableView!
+    
+    
     override func viewDidLoad() {
         displaySlideImageView()
         super.viewDidLoad()
+        //categoryTableView.isHidden = true
     }
     func displayMenuSideBar(){
         menuView.layer.shadowOpacity = 1
@@ -49,6 +55,38 @@ class ViewController: UIViewController {
         }
         menuShowing = !menuShowing
     }
+    @IBAction func categoryAction(_ sender: Any) {
+        print("Welcome")
+//        if categoryTableView.isHidden {
+//            animat(toogle: true)
+//        }else{
+//            animat(toogle: false)
+//        }
+    }
+    func animat(toogle: Bool){
+        if toogle{
+            UIView.animate(withDuration: 0.3) {
+                self.categoryTableView.isHidden = false
+            }
+        }else{
+            UIView.animate(withDuration: 0.3) {
+                self.categoryTableView.isHidden = true
+            }
+        }
+        
+    }
     
+    
+}
+extension ViewController: UITableViewDelegate,UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return category.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellcategory",for: indexPath)
+        cell.textLabel?.text = category[indexPath.row]
+        return cell
+    }
 }
 
