@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B61977A20B65F0C007C3AE5 /* TestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B61977920B65F0C007C3AE5 /* TestTableViewController.swift */; };
 		0BC7306320AE70E3002AA9BC /* RuralCustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC7306220AE70E3002AA9BC /* RuralCustomImageView.swift */; };
 		0BDBEEFC20A9F77400CABC04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDBEEFB20A9F77400CABC04 /* AppDelegate.swift */; };
 		0BDBEEFE20A9F77500CABC04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDBEEFD20A9F77500CABC04 /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B61977920B65F0C007C3AE5 /* TestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableViewController.swift; sourceTree = "<group>"; };
 		0BC7306220AE70E3002AA9BC /* RuralCustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuralCustomImageView.swift; sourceTree = "<group>"; };
 		0BDBEEF820A9F77400CABC04 /* sampleruralarea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sampleruralarea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BDBEEFB20A9F77400CABC04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B61977820B65ED2007C3AE5 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0B61977920B65F0C007C3AE5 /* TestTableViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
 		0BC7306120AE707E002AA9BC /* views */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +134,7 @@
 		0BDBEEFA20A9F77400CABC04 /* sampleruralarea */ = {
 			isa = PBXGroup;
 			children = (
+				0B61977820B65ED2007C3AE5 /* controllers */,
 				0BC7306120AE707E002AA9BC /* views */,
 				0BDBEEFB20A9F77400CABC04 /* AppDelegate.swift */,
 				0BDBEEFD20A9F77500CABC04 /* ViewController.swift */,
@@ -397,6 +408,7 @@
 				0BC7306320AE70E3002AA9BC /* RuralCustomImageView.swift in Sources */,
 				0BDBEEFE20A9F77500CABC04 /* ViewController.swift in Sources */,
 				0BDBEEFC20A9F77400CABC04 /* AppDelegate.swift in Sources */,
+				0B61977A20B65F0C007C3AE5 /* TestTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

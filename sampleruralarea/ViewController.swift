@@ -16,9 +16,18 @@ class ViewController: UIViewController {
     var menuShowing = false
     @IBOutlet weak var menuView: UIView!
     
+    @IBOutlet weak var categoryButton: UIButton!
+    @IBOutlet weak var categoryTableView: UITableView!
+    var fruitList = ["Dara1","See2","Welcome3","WeDara4","SeeAgain5"]
+    
     override func viewDidLoad() {
-        displaySlideImageView()
         super.viewDidLoad()
+        
+        displaySlideImageView()
+        
+        categoryTableView.isHidden = true
+        categoryTableView.delegate = self
+        categoryTableView.dataSource = self
     }
     func displayMenuSideBar(){
         menuView.layer.shadowOpacity = 1
@@ -35,7 +44,7 @@ class ViewController: UIViewController {
                 self.imageHeightConstraint.constant = self.view.frame.size.width * aspect
             }
         })
-        
+
     }
     
     @IBAction func OpenMenuSideBar(_ sender: Any) {
@@ -50,5 +59,42 @@ class ViewController: UIViewController {
         menuShowing = !menuShowing
     }
     
+    @IBAction func categoryAButton(_ sender: Any) {
+        print(#function)
+        if categoryTableView.isHidden {
+            animat(toogle: true)
+        }else{
+            animat(toogle: false)
+        }
+    }
+    func animat(toogle: Bool){
+        if toogle{
+            UIView.animate(withDuration: 0.3) {
+                self.categoryTableView.isHidden = false
+            }
+        }else{
+            UIView.animate(withDuration: 0.3) {
+                self.categoryTableView.isHidden = true
+            }
+        }
+        
+    }
+}
+extension ViewController: UITableViewDelegate,UITableViewDataSource{
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(#function)
+        return fruitList.count
+    }
+
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        print(#function)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellcategory",for: indexPath)
+        cell.textLabel?.text = fruitList[indexPath.row]
+        return cell
+    }
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+
 }
 
