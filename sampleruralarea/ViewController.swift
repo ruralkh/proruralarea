@@ -99,7 +99,17 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("-----------------------")
-        print(categories[indexPath.row])
+        let item = categories[indexPath.row]
+        print(item)
+        performSegue(withIdentifier: "eachitem", sender: item)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    //check segue
+            if segue.identifier == "eachitem"{
+                let dest = segue.destination as! EachItemViewController
+                //dest.news2 = sender as! News
+            }
     }
 
 }

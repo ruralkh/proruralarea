@@ -293,11 +293,27 @@
                         <outlet property="leadingConstraint" destination="l8o-rc-VfJ" id="Ndu-IF-Gi8"/>
                         <outlet property="menuView" destination="iKh-Bs-CvH" id="Xgs-tR-9XN"/>
                         <outlet property="slideimageView" destination="xyS-Nq-R1A" id="wLq-uq-0AH"/>
+                        <segue destination="svJ-md-Imi" kind="show" identifier="eachitem" id="v9j-C6-o5w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1661.5999999999999" y="-106.59670164917542"/>
+        </scene>
+        <!--Each Item View Controller-->
+        <scene sceneID="t16-LM-IBB">
+            <objects>
+                <viewController id="svJ-md-Imi" customClass="EachItemViewController" customModule="sampleruralarea" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mGB-JO-7zx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="VTK-2P-fjm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q0M-9m-iyh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2810" y="-107"/>
         </scene>
         <!--MAP-->
         <scene sceneID="J4z-lu-DqK">
