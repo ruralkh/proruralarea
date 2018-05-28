@@ -9,16 +9,39 @@
 import UIKit
 
 class EachItemViewController: UIViewController {
-
+    @IBOutlet weak var eachItemTableView: UITableView!
+    
+    var eachItems: [[String:String]] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setDataToEachItem()
+        eachItemTableView.delegate = self
+        eachItemTableView.dataSource = self
+    }
+    func setDataToEachItem(){
+        eachItems = [["Num1":"OneWelcome"],["Num2":"TwoWelcome"]]
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
+
+}
+
+extension EachItemViewController: UITableViewDelegate,UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return eachItems.count
+    }
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: nil)
+        cell.textLabel?.text = eachItems[indexPath.row]["Num2"]
+        
+        return cell
+    }
+
 
 }

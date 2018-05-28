@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0B61977C20B671E9007C3AE5 /* EachItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B61977B20B671E9007C3AE5 /* EachItemViewController.swift */; };
+		0B61978020B676F7007C3AE5 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B61977E20B676F7007C3AE5 /* CustomTableViewCell.swift */; };
+		0B61978120B676F7007C3AE5 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B61977F20B676F7007C3AE5 /* CustomTableViewCell.xib */; };
+		0B61978320B6B714007C3AE5 /* noteandreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B61978220B6B714007C3AE5 /* noteandreferences.swift */; };
 		0BC7306320AE70E3002AA9BC /* RuralCustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC7306220AE70E3002AA9BC /* RuralCustomImageView.swift */; };
 		0BDBEEFC20A9F77400CABC04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDBEEFB20A9F77400CABC04 /* AppDelegate.swift */; };
 		0BDBEEFE20A9F77500CABC04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDBEEFD20A9F77500CABC04 /* ViewController.swift */; };
@@ -40,6 +43,9 @@
 
 /* Begin PBXFileReference section */
 		0B61977B20B671E9007C3AE5 /* EachItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EachItemViewController.swift; sourceTree = "<group>"; };
+		0B61977E20B676F7007C3AE5 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		0B61977F20B676F7007C3AE5 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		0B61978220B6B714007C3AE5 /* noteandreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noteandreferences.swift; sourceTree = "<group>"; };
 		0BC7306220AE70E3002AA9BC /* RuralCustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuralCustomImageView.swift; sourceTree = "<group>"; };
 		0BDBEEF820A9F77400CABC04 /* sampleruralarea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sampleruralarea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BDBEEFB20A9F77400CABC04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +107,15 @@
 			path = controllers;
 			sourceTree = "<group>";
 		};
+		0B61977D20B67670007C3AE5 /* custom */ = {
+			isa = PBXGroup;
+			children = (
+				0B61977E20B676F7007C3AE5 /* CustomTableViewCell.swift */,
+				0B61977F20B676F7007C3AE5 /* CustomTableViewCell.xib */,
+			);
+			path = custom;
+			sourceTree = "<group>";
+		};
 		0BC7306120AE707E002AA9BC /* views */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +127,7 @@
 		0BDBEEEF20A9F77400CABC04 = {
 			isa = PBXGroup;
 			children = (
+				0B61978220B6B714007C3AE5 /* noteandreferences.swift */,
 				0BDBEEFA20A9F77400CABC04 /* sampleruralarea */,
 				0BDBEF0F20A9F77800CABC04 /* sampleruralareaTests */,
 				0BDBEF1A20A9F77800CABC04 /* sampleruralareaUITests */,
@@ -134,6 +150,7 @@
 		0BDBEEFA20A9F77400CABC04 /* sampleruralarea */ = {
 			isa = PBXGroup;
 			children = (
+				0B61977D20B67670007C3AE5 /* custom */,
 				0B61977820B65ED2007C3AE5 /* controllers */,
 				0BC7306120AE707E002AA9BC /* views */,
 				0BDBEEFB20A9F77400CABC04 /* AppDelegate.swift */,
@@ -297,6 +314,7 @@
 			files = (
 				0BDBEF0620A9F77800CABC04 /* LaunchScreen.storyboard in Resources */,
 				0BDBEF0320A9F77800CABC04 /* Assets.xcassets in Resources */,
+				0B61978120B676F7007C3AE5 /* CustomTableViewCell.xib in Resources */,
 				0BDBEF0120A9F77500CABC04 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,9 +424,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BC7306320AE70E3002AA9BC /* RuralCustomImageView.swift in Sources */,
+				0B61978020B676F7007C3AE5 /* CustomTableViewCell.swift in Sources */,
 				0BDBEEFE20A9F77500CABC04 /* ViewController.swift in Sources */,
 				0B61977C20B671E9007C3AE5 /* EachItemViewController.swift in Sources */,
 				0BDBEEFC20A9F77400CABC04 /* AppDelegate.swift in Sources */,
+				0B61978320B6B714007C3AE5 /* noteandreferences.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -307,13 +307,28 @@
                     <view key="view" contentMode="scaleToFill" id="mGB-JO-7zx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="d48-Et-I17">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="d48-Et-I17" firstAttribute="leading" secondItem="VTK-2P-fjm" secondAttribute="leading" id="h5o-Aa-Pqs"/>
+                            <constraint firstItem="d48-Et-I17" firstAttribute="top" secondItem="VTK-2P-fjm" secondAttribute="top" id="iz6-F4-hCj"/>
+                            <constraint firstItem="d48-Et-I17" firstAttribute="bottom" secondItem="VTK-2P-fjm" secondAttribute="bottom" id="jYI-bx-lfR"/>
+                            <constraint firstItem="d48-Et-I17" firstAttribute="trailing" secondItem="VTK-2P-fjm" secondAttribute="trailing" id="oKx-t5-5ep"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="VTK-2P-fjm"/>
                     </view>
+                    <connections>
+                        <outlet property="eachItemTableView" destination="d48-Et-I17" id="t0f-sd-08l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q0M-9m-iyh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2810" y="-107"/>
+            <point key="canvasLocation" x="2808.8000000000002" y="-107.49625187406298"/>
         </scene>
         <!--MAP-->
         <scene sceneID="J4z-lu-DqK">
